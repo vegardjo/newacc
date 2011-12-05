@@ -1,0 +1,6 @@
+name = Notify new account
+description = Changes default setting on notify user of new account
+core = 7.x
+files[] = newacc.module
+version = "7.x-1.0"
+core = "7.x"

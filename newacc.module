@@ -1,0 +1,9 @@
+<?php 
+/* Hook form alter
+ * Sets "notify user of new account" chosen by default
+*/
+function newacc_form_alter(&$form, $form_state, $form_id){
+  if ($form_id == 'user_register_form') {
+    $form['account']['notify']['#default_value'] = TRUE;
+  }
+}
